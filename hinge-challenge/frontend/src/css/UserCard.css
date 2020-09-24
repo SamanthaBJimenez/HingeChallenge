@@ -1,0 +1,23 @@
+.userCardMain {
+    height: 35vh;
+    width: 63vh;
+    text-align: left;
+    padding: 50px;
+    display: inline-flex;
+}
+
+.userName {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.userBio {
+    font-weight: 500;
+}
+
+.images {
+    height: 35vh;
+    width: 35vh;
+    object-fit: cover;
+    object-position: right;
+}
