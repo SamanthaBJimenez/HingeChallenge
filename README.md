@@ -8,7 +8,8 @@ This is a full stack web application that will allow users to view profiles of o
 * Clone the forked repository
 * `cd` to the directory where you cloned it
 * `npm install` to install dependencies
-* `cd` to the backend folder and run `nodemon app.js`
+* `cd` to the backend folder and run `psql -f db/schema.sql` to get the database
+* While in the backend, run `nodemon app.js`
 * `cd` to the frontend folder and run `npm start`
 
 ## User Flow
