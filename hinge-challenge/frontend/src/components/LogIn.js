@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { NavLink, useHistory } from 'react-router-dom';
-
+import './../css/LogIn.css';
 
 const LogIn = () => {
     let history = useHistory();
@@ -16,13 +16,11 @@ const LogIn = () => {
 
     return (
         <div>
-            <h1>Log In</h1>
+            <h1 class='login'>Log In</h1>
             <button type='button' onClick={demoLogIn}>Demo Log In</button>
-            <form>
+            <form class='loginForm'>
                 <input placeholder='Email'/>
-                {/* Email */}
                 <input placeholder='Password'/>
-                {/* Password */}
                 <button type='button' onClick={error}>Log In</button>
             </form>
             <h4>Don't have an account? <NavLink exact to='/signup'>Sign up here!</NavLink></h4>

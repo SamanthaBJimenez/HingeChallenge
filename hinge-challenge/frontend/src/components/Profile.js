@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
-import { Form, InputGroup, FormControl, Button, Modal, Col } from 'react-bootstrap';
+import { Form, Button, Modal } from 'react-bootstrap';
+import './../css/Profile.css';
 
 const Profile = () => {
     const location = useLocation();
@@ -28,9 +29,8 @@ const Profile = () => {
                     setName(userData.data.payload.name);
                     setBio(userData.data.payload.bio);
                     setEmail(userData.data.payload.email);
-                } catch {
-                    
-                    // console.log(error);
+                } catch(error) {
+                    console.log(error);
                 }
             }
         }
@@ -77,7 +77,7 @@ const Profile = () => {
                 <button type='button' onClick={handleShow}>Edit Profile</button>
             </nav>
             <div>
-                <h1>{name}</h1>
+                <h1 class='profileName'>{name}</h1>
                 <h4>{email}</h4>
                 <h2>{bio}</h2>
             </div>
